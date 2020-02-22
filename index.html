@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>MDT Login</title>
+	<link rel="stylesheet" href="./css/style.css">
+
+		<script
+  			src="https://code.jquery.com/jquery-3.4.1.min.js"
+  			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  			crossorigin="anonymous">
+  		</script>
+
+</head>
+<body>
+
+	<p id="lspdHeader">LOS SANTOS POLICE DEPARTMENT</p>
+	<p id="lspdHeaderUnder">
+		<i>Obey & Serve</i>
+	</p>
+	<p id="loginText">Please log in..</p>
+	<hr id="headerBreak">
+
+	<div class="loginForm">
+		<form action="authenticate.php" method="post">
+			<input type="text" name="loginUsername" id="username" placeholder="Enter Username">
+			<input type="password" name="loginPassword" id="password" placeholder="Enter Password">
+			<input type="button" name="loginButton" id="loginButtonForm" value="LOGIN">
+		</form>
+	</div>
+
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li>|</li>
+		<li><a href="#">Public Records</a></li>
+	</ul>
+
+	<footer>
+		<hr id="footerBreak">
+	</footer>
+	<p id="footerText">The Los Santos Police Department has been the leading law enforcement department in the United States for over 20 years. Everyday, members of the department risk their lives to save others.</p>
+</body>
+</html>
