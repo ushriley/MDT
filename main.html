@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>MDT Login</title>
+	<link rel="stylesheet" href="./css/main.css">
+
+		<script
+  			src="https://code.jquery.com/jquery-3.4.1.min.js"
+  			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  			crossorigin="anonymous">
+  		</script>
+
+</head>
+<body>
+
+	<p id="lspdHeader">LOS SANTOS POLICE DEPARTMENT</p>
+	<p id="lspdHeaderUnder">
+		<i>Obey & Serve</i>
+	</p>
+	<p id="loginText">Welcome back, Officer James.</p>
+	<hr id="headerBreak">
+
+	<ul>
+		<li id="Logout"><a href="index.html">Logout</a></li>
+		<li> | </li>
+		<li id="searchButton"><a href="#">Search</a></li>
+		<li> | </li>
+		<li><a href="#">Submit</a></li>
+		<li> | </li>
+		<li><a href="#">Warrants</a></li>
+		<li> | </li>
+		<li><a href="#">Reports</a></li>
+		<li> | </li>
+		<li><a href="#">Bolos</a></li>
+		<li> | </li>
+		<li><a href="#">User Admin</a></li>
+	</ul>
+
+	<div class="loginForm">
+		<form autocomplete="off">>
+			<input type="text" name="loginUsername" placeholder="Enter Civilian Name / ID">
+			<input type="button" name="loginButton" id="loginButtonForm" value="Search">
+		</form>
+	</div>
+
+<table id="myTable">
+  <tr>
+    <td>James Patrick</td>
+  </tr>
+  <tr>
+    <td>James Bob</td>
+  </tr>
+  <tr>
+    <td>James Squid</td>
+  </tr>
+  <tr>
+    <td>James First</td>
+  </tr>
+  <tr>
+    <td>James Last</td>
+  </tr>
+  <tr>
+    <td>James Test</td>
+  </tr>
+  <tr>
+    <td>James Mast</td>
+  </tr>
+  <tr>
+    <td>James Past</td>
+  </tr>
+</table>
+
+	<footer>
+		<hr id="footerBreak">
+	</footer>
+	<p id="footerText">The Los Santos Police Department has been the leading law enforcement department in the United States for over 20 years. Everyday, members of the department risk their lives to save others.</p>
+
+
+	<script>
+		$("#searchButton").click(function() {
+			$(".loginForm").toggle();
+			$("#myTable").toggle();
+		});
+
+	</script>
+</body>
+</html>
